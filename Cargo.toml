@@ -47,9 +47,11 @@ v5-32 = ["v5-27"]
 v5-35 = ["v5-32"]
 v5-38 = ["v5-35"]
 v5-40 = ["v5-38"]
+bundled = ["cc", "v5-40"]
 
 [build-dependencies]
 vcpkg = "0.2.15"
+cc = { version = "1.0.79", optional = true }
 
 [package.metadata.vcpkg]
 git = "https://github.com/microsoft/vcpkg"
